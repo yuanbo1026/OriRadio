@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayStationListActivity"
+    android:background="@color/RadiothekBlueDark" >
+
+    <GridView
+        android:id="@+id/gv_main_grid"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/frame_banner"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        tools:listitem="@layout/main_grid_item" >
+
+    </GridView>
+
+    <include
+        android:layout_width="fill_parent"
+        android:id="@+id/frame_banner"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/banner_layout" />
+
+</RelativeLayout>

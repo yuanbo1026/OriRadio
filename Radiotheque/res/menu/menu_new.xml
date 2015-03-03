@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	
+    <!-- 
+    <item
+        android:id="@+id/action_genres"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:icon="@drawable/ic_menu_genre"
+        android:title="@string/mainactivity.button.genre"/>  -->
+    
+	<item
+	    android:id="@+id/search"
+	    android:orderInCategory="400"
+        android:title="@string/search_label"
+        android:icon="@drawable/ic_menu_search"
+        android:showAsAction="always|collapseActionView"
+        android:actionViewClass="android.widget.SearchView" />
+	
+	<item
+        android:id="@+id/action_favorites"
+        android:orderInCategory="200"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_menu_favs"
+        android:title="@string/mainactivity.button.favs"/>
+	
+	<item
+        android:id="@+id/action_drawer"
+        android:orderInCategory="500"
+        android:showAsAction="always|collapseActionView"
+        android:icon="@drawable/ic_menu_menu"
+        android:title="@string/mainactivity.button.menu"/>
+</menu>
